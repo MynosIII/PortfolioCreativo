@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora de Exploración - Matías Gaglio</title>
+    <link rel="stylesheet" href="style-creativo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Playfair+Display:wght@700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="scrolling-content-wrapper">
+
+        <section class="hero-explorador">
+            
+            <div class="manifiesto-container">
+                <h1 class="manifiesto-titulo">Matías Ignacio Gaglio</h1>
+                <h2 class="manifiesto-subtitulo">El explorador</h2>
+                <p class="manifiesto-prosa">
+                    Trabajo la creatividad como una expedición a territorios desconocidos. Antes de cualquier pieza, levanto un mapa: observo comportamientos, registro tensiones y leo qué hace la audiencia cuando nadie le está hablando.
+                </p>
+                <p class="manifiesto-prosa">
+                    Los datos, para mí, no son un fin sino una brújula. Me indican hacia dónde vale la pena caminar, pero el hallazgo verdadero es conceptual: el insight que ordena el paisaje y le da sentido a la campaña.
+                </p>
+                <p class="manifiesto-prosa">
+                    Concibo cada proyecto como una travesía metódica: primero exploro y abro posibilidades; después reduzco, elijo y trazo la mejor ruta. Combino pensamiento divergente y convergente para pasar de los indicios al concepto y del concepto a la forma.
+                </p>
+                <p class="manifiesto-prosa">
+                    Cada pieza que ves en este portfolio es el registro de una de esas expediciones: casos donde la estrategia, la investigación del target y la narrativa se convierten en territorio visual.
+                </p>
+                <p class="manifiesto-prosa" id="manifiesto-cierre">
+                    <b>Explorar, en mi trabajo, es crear con precisión.</b>
+                </p>
+            </div>
+
+            <div class="ficha-explorador-imagen-container">
+                <img src="Libro1.png" alt="Ficha del explorador" class="ficha-explorador-imagen">
+            </div>
+        </section>
+
+        <section class="mapa-container">
+            <header class="mapa-header">
+                <div class="mochila-title-card">
+                    <h2 class="mochila-titulo">Territorios Descubiertos</h2>
+                    <p class="instruccion">Explore mi mapa de contenidos ↓</p>
+                </div>
+            </header>
+
+            <div id="mapa-scroll-container" class="mapa-scroll-container">
+                
+                <img src="mapa-cerrado.png" id="mapa-static-closed" alt="Mapa cerrado">
+                <img src="mapa-abierto.png" id="mapa-static-open" alt="Mapa abierto">
+
+                <div id="mapa-islas-container" class="mapa-islas-container">
+                    <button class="isla" data-modal="modal-isla-trenes" style="top: 35%; left: 65%;">•</button>
+                    <span class="isla-label" style="top: 37%; left: 66%;">Territorio: Vagones del Tiempo</span>
+
+                    <button class="isla" data-modal="modal-isla-gusto" style="top: 60%; left: 40%;">•</button>
+                    <span class="isla-label" style="top: 62%; left: 42%;">Territorio: La llevás adentro</span>
+
+                    <button class="isla" data-modal="modal-isla-amazon" style="top: 50%; left: 22%;">•</button>
+                    <span class="isla-label" style="top: 48%; left: 23%;">Territorio: Comercio de los Enfermos</span>
+
+                    <button class="isla" data-modal="modal-isla-tapo" style="top: 30%; left: 48%;">•</button>
+                    <span class="isla-label" style="top: 32%; left: 50%;">Territorio: Isla de la Revolución</span>
+                </div>
+
+                <div class="mapa-toggle-zone left"></div>
+                <div class="mapa-toggle-zone right"></div>
+                <div class="mapa-open-zone"></div>
+            </div>
+        </section>
+
+        <section class="escritorio-end-section">
+            <img src="escritorioend.png" alt="Objetos sobre el escritorio">
+        </section>
+        
+        <hr class="section-divider">
+
+
+        <section class="mochila-section">
+            
+            <div class="mochila-title-card">
+                <h2 class="mochila-titulo">Mochila de Exploración</h2>
+                <p class="instruccion">El stack de mi gabinete creativo y técnico.</p>
+            </div>
+            
+            <div class="mochila-layout-container">
+                
+                <img src="oldbagpack.png" alt="Mochila de explorador" class="mochila-central-grande" id="mochila-toggle-btn">
+                
+                <div class="stack-item" style="top: 5%; left: 20%;">
+                    <img src="Blender.png" alt="Logo Blender" class="stack-logo">
+                    <h3>Blender</h3>
+                    <span class="level-basico">Basico</span>
+                </div>
+                
+                <div class="stack-item" style="top: 35%; left: 5%;">
+                    <img src="Premiere.png" alt="Logo Premiere" class="stack-logo">
+                    <h3>Premiere</h3>
+                    <span class="level-intermedio">Intermedio</span>
+                </div>
+
+                <div class="stack-item" style="top: 65%; left: 0%;">
+                    <img src="AfterEffects.png" alt="Logo After Effects" class="stack-logo">
+                    <h3>After Effects</h3>
+                    <span class="level-intermedio">Intermedio</span>
+                </div>
+
+                <div class="stack-item" style="top: 90%; left: 15%;">
+                    <img src="Python.png" alt="Logo Python" class="stack-logo">
+                    <h3>Python</h3>
+                    <span class="level-intermedio">Intermedio</span>
+                </div>
+
+                <div class="stack-item" style="top: 5%; right: 20%;">
+                    <img src="Photoshop.png" alt="Logo Photoshop" class="stack-logo">
+                    <h3>Photoshop</h3>
+                    <span class="level-intermedio">Intermedio</span>
+                </div>
+
+                <div class="stack-item" style="top: 35%; right: 5%;">
+                    <img src="Excel.png" alt="Logo Excel" class="stack-logo">
+                    <h3>Excel</h3>
+                    <span class="level-avanzado">Avanzado</span>
+                </div>
+
+                <div class="stack-item" style="top: 65%; right: 0%;">
+                    <img src="Word.png" alt="Logo Word" class="stack-logo">
+                    <h3>Word</h3>
+                    <span class="level-avanzado">Avanzado</span>
+                </div>
+
+                <div class="stack-item" style="top: 90%; right: 15%;">
+                    <img src="Meta.png" alt="Logo Meta Ads" class="stack-logo">
+                    <h3>Meta Ads</h3>
+                    <span class="level-basico">Basico</span>
+                </div>
+                
+                <div class="stack-item" style="bottom: -10%; left: 50%; transform: translateX(-50%);">
+                    <img src="Canva.png" alt="Logo Canva" class="stack-logo">
+                    <h3>Canva</h3>
+                    <span class="level-basico">Basico</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="exploraciones-section">
+            <div class="mochila-title-card">
+                <h2 class="mochila-titulo">Exploraciones</h2>
+                <p class="instruccion">Las exploraciones que hice en este tiempo</p>
+            </div>
+
+            <div class="exploraciones-gallery">
+                <img src="Revolution1.png" alt="Exploración Revolution">
+                <img src="Vive1.png" alt="Exploración Vive">
+            </div>
+        </section>
+        
+    </main> 
+    
+    <footer>
+        <div class="mochila-title-card">
+                <h2 class="mochila-titulo">Contacto para futuras exploraciones</h2>
+                <p class="instruccion">Envíame un correo (mail) o contáctame por telégrafo (teléfono)</p>
+        </div>
+        
+        <div class="footer-contacto-container">
+            
+            <a href="mailto:matiasignaciogaglio@gmail.com" class="footer-link-card">
+                <img src="carta.png" alt="Enviar una carta (Email)">
+            </a>
+            
+            <div class="footer-phone-card"> 
+                <img src="telegrafo.png" alt="Marcar mi número (Teléfono)">
+                <a href="https://wa.me/5491135582309" target="_blank" class="footer-phone-number">
+                    +54 9 11 3558-2309
+                </a>
+            </div>
+
+            <a href="https://www.linkedin.com/in/matiasignaciogaglio" target="_blank" class="footer-link-card">
+                <img src="linkedin.png" alt="LinkedIn"> 
+            </a>
+
+        </div>
+    </footer>
+
+
+    <div id="modal-isla-trenes" class="modal-overlay">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" data-modal="modal-isla-trenes">&times;</button>
+    <div class="modal-cuerpo">
+      <h2>Territorio: Vagones del Tiempo</h2>
+      <h3 class="modal-subtitulo">
+        Cliente: Trenes Argentinos &amp; Biblioteca Juan N. Madero
+      </h3>
+
+      <h3>El Manifiesto de la Expedición</h3>
+      <p>
+        El viaje en tren se había convertido en un "limbo", un tiempo
+        muerto dominado por el scroll infinito. El insight fue claro:
+        la gente quería incorporar el hábito de leer, pero sentía que
+        no tenía tiempo, mientras desperdiciaba horas en su celular
+       .
+      </p>
+      <p>
+        La estrategia fue resignificar ese tiempo de viaje. El concepto,
+        <strong>"Vagones del Tiempo"</strong>, propuso transformar el
+        tren de un simple medio de transporte a un vehículo que nos permite
+        viajar a otras épocas e historias a través de la lectura.
+        La campaña buscó desconectar a los pasajeros de sus pantallas infinitas
+        para conectarlos con las páginas infinitas.
+      </p>
+
+      <h3>Hallazgos (Ejecuciones Clave)</h3>
+      <ul>
+        <li>
+          <strong>Activación "El Vagón del Tiempo":</strong> Un vagón real del
+          Mitre se transformó en una biblioteca rodante de época, inspirado en
+          la arquitectura de la Biblioteca Madero. Con actores
+          caracterizados como personajes de otra época, se convirtió el viaje en
+          una experiencia sensorial y literaria.
+        </li>
+        <li>
+          <strong>IGC "Doctor del Tiempo":</strong> El influencer "Dandy
+          Millenial" recorrió los trenes como un "doctor del tiempo
+          digital". Diagnosticó a pasajeros por "exceso de
+          doomscroll" y les entregó "recetas literarias"
+          canjeables por un libro gratis en la biblioteca.
+        </li>
+        <li>
+          <strong>OOH (Vía Pública):</strong> Se instalaron carteles estilo
+          "Sabía usted..." con datos sobre el tiempo perdido en viajes y un mural en la estación Victoria que revelaba el concepto:
+          "Usted se encuentra en el vagón del tiempo".
+        </li>
+        <li>
+          <strong>UGC Challenge:</strong> Se lanzó el desafío
+          #MiTúnelDelTiempo, invitando a los usuarios a subir videos
+          caracterizados como su personaje literario favorito leyendo en el tren
+         .
+        </li>
+      </ul>
+
+      <h3>Registros de la Expedición (Piezas)</h3>
+      <p>
+        A continuación, se encuentran los registros visuales de esta expedición
+        creativa.
+      </p>
+
+      <img
+        src="ChatGPT Image Oct 22, 2025, 01_30_23 AM (1).png"
+        alt="Activación del Vagón del Tiempo como biblioteca antigua"
+      />
+      <p><em>Visualización de la activación "El Vagón del Tiempo".</em></p>
+
+      <img
+        src="Vacio (1).png"
+        alt="Receta literaria del Dandy Millenial"
+      />
+      <p>
+        <em
+          >Pieza central de la acción IGC: la "Receta Literaria" contra el
+          doomscroll.</em
+        >
+      </p>
+      <img
+        src="Lleno (1).png"
+        alt="Receta literaria del Dandy Millenial"
+      />
+      <p>
+        <em
+          >Pieza central de la acción IGC: la "Receta Literaria" contra el
+          doomscroll.</em
+        >
+      </p>
+
+      <img
+        src="adh jaiohfrae (1).png"
+        alt="Mural en la estación Victoria - Vagón del Tiempo"
+      />
+      <p><em>Mural OOH en la estación Victoria del Ferrocarril Mitre.</em></p>
+
+      <img src="sadasdggg1 (1).png" alt="Cartel OOH Sabía Usted" />
+      <p>
+        <em
+          >Mockup de la serie de carteles OOH "Sabía usted..." en la vía
+          pública.</em
+        >
+      </p>
+
+      <img
+        src="2025-CP-1C-ENTREGA-2-GRUPO-7.jpg"
+        alt="Sistema de piezas gráficas digitales"
+      />
+      <p>
+        <em
+          >Resumen del sistema visual y las piezas gráficas de la campaña.</em
+        >
+      </p>
+    </div>
+  </div>
+</div>
+<div id="modal-isla-gusto" class="modal-overlay">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" data-modal="modal-isla-gusto">&times;</button>
+    <div class="modal-cuerpo">
+      <h2>Territorio: Sabor de la Añoranza</h2>
+      <h3 class="modal-subtitulo">Cliente: Gusto Argentino</h3>
+
+      <h3>El Manifiesto de la Expedición</h3>
+      <p>
+        Esta expedición se centró en los jóvenes migrantes argentinos en
+        Europa. El insight clave fue que la "argentinidad" se descubre y
+        se extraña recién cuando se está lejos; no se extraña solo el
+        producto, sino la versión de uno mismo que aparece al
+        consumirlo. Los productos no compiten por calidad,
+        compiten contra el recuerdo.
+      </p>
+      <p>
+        La estrategia fue validar esa verdad emocional. El concepto,
+        <strong>"Algo de Argentina queda adentro tuyo siempre"</strong>,
+        convierte la marca en un ancla simbólica. Gusto Argentino no
+        vende comida, sino una forma de reconectar con esa parte del país
+        que sigue viva en el interior de cada migrante.
+      </p>
+
+      <h3>Hallazgos (Ejecuciones Clave)</h3>
+      <ul>
+        <li>
+          <strong>Filtro "Rayos X Argentos":</strong> Un filtro de Instagram
+          que simula una radiografía del pecho del usuario, pero en
+          lugar del corazón, revela un producto argentino icónico (como
+          un mate o un alfajor).
+        </li>
+        <li>
+          <strong>Gráficas "La Llevás Adentro":</strong> Piezas visuales que
+          usan la doble exposición o metáforas visuales para mostrar cómo
+          los recuerdos de Argentina (amigos, paisajes) se
+          manifiestan en la vida cotidiana en Europa.
+        </li>
+        <li>
+          <strong>Tono de Voz Cómplice:</strong> Una comunicación cercana, en
+          blanco y negro, que habla de "vos a vos" con la comunidad de
+          argentinos en el exterior.
+        </li>
+        <li>
+          <strong>Tácticas de Comunidad:</strong> Uso de influencers argentinos
+          en España, cupones de descuento, y guías SEO (ej. "Dónde
+          comprar yerba en España") para captar al target en su momento
+          de necesidad.
+        </li>
+      </ul>
+
+      <h3>Registros de la Expedición (Piezas)</h3>
+      <p>
+        A continuación, se encuentran los registros visuales de esta expedición
+        creativa.
+      </p>
+
+      <img
+        src="ChatGPT Image Nov 17, 2025, 01_44_52 AM.png"
+        alt="Concepto del filtro Rayos X Argentos"
+      />
+      <p>
+        <em
+          >Visualización del concepto clave: el filtro "Rayos X Argentos"
+          mostrando el mate "adentro" del cuerpo.</em
+        >
+      </p>
+
+      <img
+        src="OIDUFKXGDNG5HIYNHCTJVYCOSU2.png"
+        alt="Banner publicitario Llévala a tu mesa"
+      />
+      <p>
+        <em
+          >Pieza gráfica para banner, conectando el concepto interno con la
+          acción de compra ("Llévala a tu mesa").</em
+        >
+      </p>
+
+      <img
+        src="2SABORES.png"
+        alt="Hombre comiendo un alfajor con fondo de Buenos Aires"
+      />
+      <p>
+        <em
+          >"Sabores que te devuelven a lo que llevás adentro." El producto como
+          un portal al recuerdo.</em
+        >
+      </p>
+
+      <img
+        src="hombre-gaucho-barba-boina-bebien.png"
+        alt="Hombre tomando mate en una calle europea"
+      />
+      <p>
+        <em
+          >Gráfica de doble exposición: el recuerdo de los afectos se
+          superpone en la mente del migrante.</em
+        >
+      </p>
+
+      <img
+        src="dfa3a44e-138c-490b-b6a3-9dbeb0048c67.png"
+        alt="Mujer con la bandera argentina en el pecho"
+      />
+      <p>
+        <em
+          >Pieza conceptual para redes sociales reforzando la idea de llevar la
+          identidad "adentro siempre".</em
+        >
+      </p>
+    </div>
+  </div>
+</div>
+<div id="modal-isla-amazon" class="modal-overlay">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" data-modal="modal-isla-amazon">
+      &times;
+    </button>
+    <div class="modal-cuerpo">
+      <h2>Territorio: Comercio de los Vientos</h2>
+      <h3 class="modal-subtitulo">Rol: E-commerce Specialist (Vive Health)</h3>
+
+      <h3>El Manifiesto de la Expedición</h3>
+      <p>
+        El territorio de Amazon es una selva híper-competitiva. Mi rol en Vive
+        Health era orquestar un ecosistema completo de optimización B2C.
+        El desafío era claro: en un mercado saturado, solo se gana con
+        una estrategia 360° que combine data, publicidad y contenido
+        de forma obsesiva.
+      </p>
+      <p>
+        Cada listing era un campo de batalla por el Buy Box, el ranking (SEO) y
+        la tasa de conversión (CR). Mi expedición consistió en usar un arsenal
+        de herramientas (Helium 10, Sellerboard, Python) para analizar el
+        mercado, optimizar la inversión (ACOS/ROI) y crear el contenido que
+        convertía.
+      </p>
+
+      <h3>Hallazgos (Ejecuciones Clave)</h3>
+      <ul>
+        <li>
+          <strong>Optimización de Listings:</strong> Creación y optimización de
+          contenido (imágenes, videos, A+/EBC) basada en A/B testing y
+          análisis de mercado (Jungle Scout, ChatGPT).
+        </li>
+        <li>
+          <strong>Gestión de Publicidad:</strong> Creación y manejo de
+          estrategias PPC (Amazon Campaigns, Google Ads, Bing Ads) con foco en
+          la optimización de ACOS y ROI.
+        </li>
+        <li>
+          <strong>Análisis de Datos:</strong> Análisis profundo de ventas,
+          rentabilidad y retornos (Sellerboard, Helloprofit, Seller Central)
+          para la toma de decisiones.
+        </li>
+        <li>
+          <strong>Gestión de Inventario:</strong> Manejo de inventario y
+          logística B2C a través de Odoo y Amazon Sellercentral.
+        </li>
+        <li>
+          <strong>Data-Driven Insights:</strong> Extracción de datos con
+          Python y APIs para análisis de la competencia y optimización del Buy
+          Box.
+        </li>
+      </ul>
+
+      <h3>Registros de la Expedición (Piezas)</h3>
+      <p>
+        A continuación, los registros visuales que demuestran la estrategia y
+        los resultados.
+      </p>
+
+      <img
+        src="Caso2.jpeg"
+        alt="Dashboard de crecimiento de ventas en Amazon"
+      />
+      <p>
+        <em>
+          Panel de análisis (Sellerboard) mostrando un crecimiento sostenido,
+          logrando un aumento del <strong>+56.6% en el Net Profit</strong> en
+          octubre como resultado de la optimización 360°.
+        </em>
+      </p>
+
+      <img
+        src="infografia producto_.png"
+        alt="Infografía comparativa de producto"
+      />
+      <p>
+        <em>
+          Ejemplo de infografía de "Added Value" (valor agregado), comparando
+          el producto (Pressure Pad) contra la competencia para justificar la
+          compra y mejorar la conversión.
+        </em>
+      </p>
+
+      <img
+        src="Amazon.jpg"
+        alt="Imagen principal de listing de Amazon"
+      />
+      <p>
+        <em>
+          Diseño de imagen 'Hero' (principal) para un listing de Amazon,
+          enfocada en los beneficios clave (Aliviar escaras, Promueve
+          circulación) para captar la atención inmediata.
+        </em>
+      </p>
+
+      <img src="EBC1.jpg" alt="Contenido A+ / EBC de Vive Health" />
+      <p>
+        <em>
+          Módulo de contenido A+ (EBC) diseñado para la marca, destacando
+          características del producto y generando confianza (Featured in
+          Forbes, etc.).
+        </V>
+      </p>
+
+      <img
+        src="thumb-video-1.jpg"
+        alt="Thumbnail de video para listing de Amazon"
+      />
+      <p>
+        <em>
+          Thumbnail (miniatura) para video de producto, un elemento crucial
+          para aumentar la tasa de conversión (CR) en el listing, destacando
+          beneficios clave ("PRE-ASSEMBLED").
+        </em>
+      </p>
+    </div>
+  </div>
+</div>
+<div id="modal-isla-tapo" class="modal-overlay">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" data-modal="modal-isla-tapo">&times;</button>
+    <div class="modal-cuerpo">
+      <h2>Territorio: El Taller del Emblema</h2>
+      <h3 class="modal-subtitulo">
+        Rol: E-commerce & Business Intelligence (Revolution Supply)
+      </h3>
+
+      <h3>El Manifiesto de la Expedición</h3>
+      <p>
+        En Revolution Supply, el desafío era doble: liderar un equipo de
+        e-commerce y, a la vez, navegar un catálogo de extrema complejidad
+        técnica (autopartes) donde los detalles son todo. Mi rol
+        principal fue implementar una cultura de <strong>Business Intelligence</strong>.
+      </p>
+      <p>
+        Cada decisión estratégica, desde la arquitectura del catálogo
+        (Parent-Child) y el repricing automatizado hasta las campañas de
+        Amazon Ads, se basó en un análisis riguroso de datos. El objetivo no
+        era solo vender, sino construir una estrategia de marca a largo plazo y
+        superar sistemáticamente los KPIs de rentabilidad (ROAS) y cuota de
+        mercado.
+      </p>
+
+      <h3>Hallazgos (Ejecuciones Clave)</h3>
+      <ul>
+        <li>
+          <strong>Liderazgo y Estrategia:</strong> Liderazgo del equipo de
+          e-commerce y desarrollo de la estrategia de marca a largo plazo
+          basada en Business Intelligence.
+        </li>
+        <li>
+          <strong>Data-Driven Decisions:</strong> Gestión de datos para
+          superar KPIs de ventas, ROAS, rentabilidad y
+          market share.
+        </li>
+        <li>
+          <strong>Gestión de Catálogo:</strong> Manejo de arquitectura de
+          catálogos complejos (Flat Files, variaciones Parent-Child) y
+          repricing automatizado.
+        </li>
+        <li>
+          <strong>Automatización 3D:</strong> Desarrollo de una
+          <strong>automatización en Blender</strong> para la creación de
+          renders y texturizado de productos a escala, optimizando la
+          producción de contenido visual.
+        </li>
+        <li>
+          <strong>Gestión de Campañas:</strong> Administración de campañas
+          avanzadas en Amazon Ads y ejecución de calendarios promocionales.
+        </li>
+      </ul>
+
+      <h3>Registros de la Expedición (Piezas)</h3>
+      <p>
+        A continuación, los dashboards y herramientas de esta expedición.
+      </p>
+
+      <img
+        src="Caso1_plot.jpeg"
+        alt="Dashboard de Business Intelligence"
+      />
+      <p>
+        <em>
+          Panel principal de BI, mostrando la correlación entre inversión
+          (Spend: $97k), ventas (Sales: $581k) y ROAS (6.26). Un
+          ROAS de 6.26 demuestra una gestión publicitaria altamente
+          rentable.
+        </em>
+      </p>
+
+      <img
+        src="Caso1_conversions.png"
+        alt="Gráfico de aumento de Tasa de Conversión"
+      />
+      <p>
+        <em>
+          Resultado de la optimización estratégica: la tasa de conversión (CR)
+          aumentó de 6.28% a 13.69%, un <strong>incremento del +118.16%</strong>,
+          validando la nueva estrategia de contenido y segmentación.
+        </em>
+      </p>
+
+      <img
+        src="Caso1_Sales.png"
+        alt="Gráfico de aumento de Ventas"
+      />
+      <p>
+        <em>
+          Gráfico de "Retail Sales" con un <strong>crecimiento del +81.53%</strong>
+          en el período analizado, reflejando el impacto de la optimización
+          del catálogo y la publicidad.
+        </em>
+      </p>
+
+      <img
+        src="Caso1_render1.png"
+        alt="Automatización en Blender"
+      />
+      <p>
+        <em>
+          Entorno de trabajo en Blender, donde se desarrolló la
+          automatización para la generación de renders 3D y texturizado de
+          productos a escala.
+        </em>
+      </p>
+    </div>
+  </div>
+</div>
+
+    <script src="script-creativo.js"></script>
+</body>
+</html>
